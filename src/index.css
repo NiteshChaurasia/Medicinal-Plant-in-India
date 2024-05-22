@@ -1,0 +1,37 @@
+/* Base styles for all devices */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 768px) {
+  /* Adjust styles for screens up to 768px wide */
+  body {
+    font-size: 16px; /* Example: Reduce font size */
+  }
+
+  code {
+    font-size: 14px; /* Example: Reduce code font size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust styles for screens up to 480px wide (e.g., mobile devices) */
+  body {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  code {
+    font-size: 12px; /* Further reduce code font size */
+  }
+}

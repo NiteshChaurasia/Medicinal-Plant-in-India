@@ -1,0 +1,86 @@
+/* Base styles for all devices */
+html, body {
+  background-color: rgb(0, 255, 140);
+  width: 100%;
+  height: 100%;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: rgba(0, 104, 14, 0.87);
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.full-width-height {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  padding: 16px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.fill {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 768px) {
+  /* Adjust styles for screens up to 768px wide */
+  .container {
+    width: calc(100% - 16px); /* Reduce container width */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .mt16 {
+    margin-top: 8px; /* Reduce margin-top */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust styles for screens up to 480px wide (e.g., mobile devices) */
+  .container {
+    width: calc(100% - 8px); /* Further reduce container width */
+    padding: 4px; /* Further reduce padding */
+  }
+
+  .mt16 {
+    margin-top: 4px; /* Further reduce margin-top */
+  }
+}
+
+/* Add these styles to your CSS */
+.map-container {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto; /* Center the map horizontally */
+
+  /* Add any additional styles you need */
+}
+
+/* Example: Reduce the map's size on smaller screens */
+@media (max-width: 768px) {
+  .map-container {
+    max-width: 400px; /* Adjust as needed for smaller screens */
+  }
+}
